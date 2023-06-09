@@ -1,233 +1,201 @@
 /*cambiar la tipografia del sitio web*/
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&family=Playfair+Display:ital,wght@1,600&display=swap');
-
-*{
-    font-family: 'Lora', serif;
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&family=Playfair+Display:ital,wght@1,600&display=swap");
+* {
+  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: white;
+body {
+  background-color: white;
 }
 
-header{
-background-color: black;
+header {
+  background-color: black;
+}
+header div div .img-uno {
+  width: 200px;
+  height: 100px;
+  margin-left: 20px;
+}
+header div .boton .form-control {
+  max-width: 500px;
+  margin-top: 2%;
+  border-color: grey;
+  color: black;
+  font-weight: bold;
+}
+header div .boton .btn {
+  height: 50px;
+  margin-top: 2%;
+  border-color: black;
+  background-color: #525252;
+  color: black;
+  font-weight: bold;
+}
+header nav {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 20px;
+}
+header nav .container-fluid .navbar-brand {
+  margin-left: 200px;
+  font-family: sans-serif;
+  color: black;
+}
+header nav div div .navbar-nav .nav-item .nav-link {
+  margin-left: 200px;
+  font-family: sans-serif;
+  color: black;
 }
 
-header div div .img-uno{
-    width:200px;
-    height: 100px;
-    margin-left:20px;
+/*  MAIN INDEX */
+main section div .carousel-item img {
+  height: 550px;
 }
-
-header div .boton .form-control
-{
-    max-width: 500px;
-    margin-top: 2%;
-    border-color:grey;
-    color: black;
-    font-weight: bold;
+main section h1 {
+  text-decoration: underline;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
-header div .btn{
-    height: 50px;
-    margin-top: 2%;
-    border-color:black;
-    background-color: #525252;
-    color:black;
-    font-weight: bold;
+main section div .card-articulo {
+  border-radius: 30%;
 }
-
-nav {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    margin-top: 20px;
-}
-
-header nav .container-fluid .navbar-brand,
-header nav div div .navbar-nav .nav-item .nav-link
-{
-margin-left: 200px;
-font-family: sans-serif;
-color: black;
-}
-
-/*  MAIN  */
-
-main section div  .carousel-item img
-{  
-    height: 550px;
-}
-
-
-
-main section h1{
-    text-decoration: underline;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-main section div .card-articulo{
-    border-radius: 30%;
-    
-}
-
-
-
-main section div .card-articulo a img{
-    
-    height: 470px;
-    width: 350px;
-    margin-bottom:100px;
-    margin-top: 50px;
-    margin-left: 20px;
-    padding-left: 40px;
-}
-
-/*  FOOTER  */
-
-footer{
-    background-color: black;
-    position: relative;
-    width: 100%;
-}
-
-
-footer .contenedor {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-footer h3
-{
-    text-decoration:underline;
-    font-family:serif;
-}
-
-footer .cliente{
-    color: white;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-top: 20px;
-}
-.horario{
-    color: white;
-    flex-direction: column;
-    align-items: end;
-    margin-top: 20px;
+main section div .card-articulo a img {
+  height: 470px;
+  width: 350px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-left: 20px;
+  padding-left: 40px;
 }
 
 /*AGREGADO PAGINA NOTEBOOK*/
-
-main section .producto{
-    text-decoration: underline;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    text-align: center;
+/* MAIN PAGINA NOTEBOOK/PC-ARMADA/PERIFERICOS*/
+main section .producto {
+  text-decoration: underline;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
 }
-
-main section article .tarjeta{
-    margin: 8% 8% 10% 4%;
-    width: 500px;
-    border: 1px solid black;
-    padding: 0;
-    border-radius: 5% 5% 0 0;
-    border-style:double;
+main section article .tarjeta {
+  margin: 8% 8% 10% 4%;
+  width: 500px;
+  border: 1px solid black;
+  padding: 0;
+  border-radius: 5% 5% 0 0;
+  border-style: double;
 }
-
 main section article .tarjeta .card-img-top {
-    border-radius: 5% 5% 0 0;
-    border: 1px solid black;
+  border-radius: 5% 5% 0 0;
+  border: 1px solid black;
+}
+main section article .tarjeta .card-body {
+  border-color: black;
+  background-color: #C1D0B5;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  height: 90px;
+  align-items: center;
+  flex-direction: column;
+}
+main section article .tarjeta .card-body h5 {
+  font-weight: bold;
+  margin-bottom: 4%;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-main section article .tarjeta .card-body{
-    border-color:black;
-    background-color: #C1D0B5;
-    color:black;
-    font-weight: bold;
-    text-align: center;
-    height: 90px;
-    align-items: center;
-    flex-direction: column;
+/*  FOOTER  */
+footer {
+  background-color: black;
+  position: relative;
+  width: 100%;
 }
-main section article .tarjeta .card-body h5{
-    font-weight: bold;
-    margin-bottom: 4%;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+footer .contenedor {
+  display: flex;
+  justify-content: space-around;
 }
-
+footer h3 {
+  text-decoration: underline;
+  font-family: serif;
+}
+footer .cliente {
+  color: white;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+}
+footer .horario {
+  color: white;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 20px;
+}
 
 /*pagina de contacto*/
-h4 {
-    font-size: 40px;
-    margin-left: 3%;
-    margin-top: 5%;
-    text-decoration: underline;
-    font-weight: bold;
+main section h4 {
+  font-size: 40px;
+  margin-left: 3%;
+  margin-top: 5%;
+  text-decoration: underline;
+  font-weight: bold;
 }
-h6{
-    font-size: 25px;
-    margin-left: 3%;
-    margin-top: 2%;
-    font-weight: bold;
+main section h6 {
+  font-size: 25px;
+  margin-left: 3%;
+  margin-top: 2%;
+  font-weight: bold;
 }
-
-.cuadro{
-    width: 1000px;
-    height: 500px;
-    margin: 3% 0 3% 3%; 
-    background-color: #726666;
-    border: 1px black solid;
-    border-radius: 3%;
+main div form .mb-3 .form-label {
+  margin-left: 3%;
+  margin-top: 1%;
+  font-weight: bolder;
 }
-
-main div form .mb-3 .form-label{
-    margin-left: 3%;
-    margin-top: 1%;
-    font-weight: bolder;
+main div form .mb-3 .form-control {
+  width: 80%;
+  margin-left: 3%;
+  height: 50px;
+  font-weight: bold;
 }
-
-main div form .mb-3 .form-control{
-    width: 80%;
-    margin-left: 3%;
-    height: 50px;
-    font-weight: bold;
+main div form .btn {
+  margin-left: 45%;
+  margin-top: 30px;
 }
-main form .btn{
-    margin-left: 45%;
-    margin-top:30px;
+main .cuadro {
+  width: 1000px;
+  height: 500px;
+  margin: 3% 0 3% 3%;
+  background-color: #726666;
+  border: 1px black solid;
+  border-radius: 3%;
 }
 
-/* MODELOS ADAPTADOS EN EL INDEX Y NOTEBOOKS*/
-
-
-@media (max-width: 480px){
-    .imagen-uno{
-        display: none;
-    }
-    header{
-        
-        width: 100%;
-        height: auto;
-    }
+/* MODELOS ADAPTADOS VISTA MOBILE EN EL INDEX Y NOTEBOOKS*/
+@media (max-width: 480px) {
+  .imagen-uno {
+    display: none;
+  }
+  header {
+    width: 100%;
+    height: auto;
+  }
 }
-@media (max-width: 480px){
-    .card-articulo{
-        margin-left: 0;
-    }
-
-    form {
-        flex-direction: column;
-    }
-    .tarjeta{
-        width: 300px;
-        margin-left: 0;
-        
-    } 
-
-
+@media (max-width: 480px) {
+  .card-articulo {
+    margin-left: 0;
+  }
+  form {
+    flex-direction: column;
+  }
+  .tarjeta {
+    width: 300px;
+    margin-left: 0;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

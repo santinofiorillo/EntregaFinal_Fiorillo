@@ -1,0 +1,41 @@
+
+@import "generales";
+@import "header";
+@import "main-index";
+@import "main-productos";
+@import "footer";
+@import "contacto";
+
+
+
+
+
+/* MODELOS ADAPTADOS VISTA MOBILE EN EL INDEX Y NOTEBOOKS*/
+
+
+@media (max-width: 480px){
+    .imagen-uno{
+        display: none;
+    }
+    header{
+        
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 480px){
+    .card-articulo{
+        margin-left: 0;
+    }
+
+    form {
+        flex-direction: column;
+    }
+    .tarjeta{
+        width: 300px;
+        margin-left: 0;
+        
+    } 
+
+
+}

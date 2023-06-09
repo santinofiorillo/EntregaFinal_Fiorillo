@@ -1,0 +1,61 @@
+/*pagina de contacto*/
+
+main 
+{
+    section
+    {
+        h4 
+        {
+            font-size: 40px;
+            margin-left: 3%;
+            margin-top: 5%;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        h6
+        {
+            font-size: 25px;
+            margin-left: 3%;
+            margin-top: 2%;
+            font-weight: bold;
+        }
+    }
+    
+    div
+    { 
+        form
+        {
+            .mb-3
+            {
+                .form-label
+                { 
+                    margin-left: 3%;
+                    margin-top: 1%;
+                    font-weight: bolder;
+                }
+                .form-control
+                {
+                    width: 80%;
+                    margin-left: 3%;
+                    height: 50px;
+                    font-weight: bold;
+                }
+            } 
+            .btn
+            {
+                margin-left: 45%;
+                margin-top:30px;
+            }      
+        }           
+    }
+    
+    .cuadro
+    {
+        width: 1000px;
+        height: 500px;
+        margin: 3% 0 3% 3%; 
+        background-color: #726666;
+        border: 1px black solid;
+        border-radius: 3%;
+    }          
+}
