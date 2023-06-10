@@ -11,6 +11,7 @@ body {
   background-color: white;
 }
 
+/* HEADER */
 header {
   background-color: black;
 }
@@ -175,8 +176,8 @@ main .cuadro {
   border-radius: 3%;
 }
 
-/* MODELOS ADAPTADOS VISTA MOBILE EN EL INDEX Y NOTEBOOKS*/
-@media (max-width: 480px) {
+/* MODELOS ADAPTADOS VISTA MOBILE */
+@media (max-width: 576px) {
   .imagen-uno {
     display: none;
   }
@@ -184,17 +185,35 @@ main .cuadro {
     width: 100%;
     height: auto;
   }
-}
-@media (max-width: 480px) {
+  /* Imagen del logo */
+  .logotipo {
+    display: flex;
+    justify-content: center;
+  }
+  /* Barra de busqueda*/
+  .form-control {
+    width: 450px;
+  }
+  /* Index */
   .card-articulo {
-    margin-left: 0;
+    margin-left: 45px;
   }
-  form {
+  /* Footer */
+  .contenedor {
+    display: flex;
     flex-direction: column;
+    text-align: center;
   }
-  .tarjeta {
-    width: 300px;
-    margin-left: 0;
+  /* pagina contacto */
+  .info-dos h4 {
+    font-size: 30px;
+  }
+  section div h6 {
+    font-size: 15px;
+  }
+  main .cuadro {
+    height: 470px;
+    width: 520px;
   }
 }
 
