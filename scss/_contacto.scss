@@ -1,16 +1,18 @@
 /*pagina de contacto*/
 
+@import "maps";
+
 main 
 {
     section
     {
         h4 
         {
-            font-size: 40px;
-            margin-left: 3%;
-            margin-top: 5%;
-            text-decoration: underline;
-            font-weight: bold;
+            font-size: map-get($titulo , tamaño );
+            margin-left: map-get($titulo , margen-izq );
+            margin-top: map-get($titulo , margen-arriba );
+            text-decoration: map-get($titulo , decoration );
+            font-weight: map-get($titulo , tipo-letra );
         }
         h6
         {

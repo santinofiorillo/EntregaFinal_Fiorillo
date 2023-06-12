@@ -1,5 +1,7 @@
 /* HEADER */
 
+@import "mixins";
+
 header
 {
     background-color: black;
@@ -9,9 +11,7 @@ header
         {
             .img-uno
                 {
-                width:200px;
-                height: 100px;
-                margin-left:20px;
+                    @include tamaño (200px, 100px , 20px);
                 }
         }
         

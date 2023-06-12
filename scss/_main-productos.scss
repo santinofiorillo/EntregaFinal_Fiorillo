@@ -2,6 +2,9 @@
 
 /* MAIN PAGINA NOTEBOOK/PC-ARMADA/PERIFERICOS*/
 
+@import "maps";
+@import "mixins";
+
 main
 {
     section
@@ -26,12 +29,11 @@ main
                 border-style:double;
                 .card-img-top
                 {
-                    border-radius: 5% 5% 0 0;
-                    border: 1px solid black;
+                    @include borde (5% 5% 0 0 , 1px solid black )
                 }
                 .card-body{
-                    border-color:black;
-                    background-color: #C1D0B5;
+                    border-color: map-get($card , borde-color);
+                    background-color: map-get($card , colores );
                     color:black;
                     font-weight: bold;
                     text-align: center;

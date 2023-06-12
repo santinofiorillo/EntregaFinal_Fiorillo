@@ -1,13 +1,14 @@
 /*  FOOTER  */
 
+@import "mixins";
+
 footer{
     background-color: black;
     position: relative;
     width: 100%;
     .contenedor 
     {
-        display: flex;
-        justify-content: space-around;
+        @include contenedor (flex , space-around);
     }
     h3
     {

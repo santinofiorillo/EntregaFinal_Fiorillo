@@ -1,0 +1,21 @@
+@mixin borde ($radio , $bordes){
+    border-radius: $radio; 
+    border: $bordes; 
+}
+
+@mixin tamaño ($ancho , $largo , $margen){
+    width: $ancho;
+    height: $largo;
+    margin-left: $margen;
+}
+
+@mixin margin ($margen-izq , $margen-abajo){
+    margin-top:$margen-izq; 
+    margin-bottom: $margen-abajo;
+}
+
+
+@mixin contenedor ($movimiento , $espacio ){
+    display: $movimiento;
+    justify-content: $espacio;
+}
