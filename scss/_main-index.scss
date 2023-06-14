@@ -24,21 +24,30 @@ main
         }
         div
         {
-            .card-articulo
+            .card-articulo 
             {
-                border-radius: 30%;
-                a
+                overflow: hidden;
+                position: relative;
+                
+                a 
                 {
-                    img
+                    display: block;
+                    text-decoration: none;            
+                    img 
                     {
                         height: 470px;
                         width: 350px;
-                        margin-bottom:100px;
+                        margin-bottom: 100px;
                         margin-top: 50px;
                         margin-left: 20px;
                         padding-left: 40px;
-                    }
-                }    
+                        transition: transform 0.3s ease;
+                    }  
+                &:hover img 
+                {
+                    transform: scale(1.2);
+                }
+                }
             }
         }
     }    

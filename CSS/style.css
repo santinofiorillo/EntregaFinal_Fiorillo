@@ -61,7 +61,12 @@ main section h1 {
   margin-bottom: 50px;
 }
 main section div .card-articulo {
-  border-radius: 30%;
+  overflow: hidden;
+  position: relative;
+}
+main section div .card-articulo a {
+  display: block;
+  text-decoration: none;
 }
 main section div .card-articulo a img {
   height: 470px;
@@ -70,6 +75,10 @@ main section div .card-articulo a img {
   margin-top: 50px;
   margin-left: 20px;
   padding-left: 40px;
+  transition: transform 0.3s ease;
+}
+main section div .card-articulo a:hover img {
+  transform: scale(1.2);
 }
 
 /*AGREGADO PAGINA NOTEBOOK*/
