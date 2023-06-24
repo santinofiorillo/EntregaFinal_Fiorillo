@@ -6,58 +6,75 @@ main
 {
     section
     {
-        h4 
+        .info-dos
         {
-            font-size: map-get($titulo , tamaño );
-            margin-left: map-get($titulo , margen-izq );
-            margin-top: map-get($titulo , margen-arriba );
-            text-decoration: map-get($titulo , decoration );
-            font-weight: map-get($titulo , tipo-letra );
-        }
-        h6
-        {
-            font-size: 25px;
-            margin-left: 3%;
-            margin-top: 2%;
-            font-weight: bold;
-        }
-    }
-    
-    div
-    { 
-        form
-        {
-            .mb-3
+            width: 1500px;
+            height: 1000px;
+            margin: 3% 0 3% 8%; 
+            background: rgb(55,91,110);
+            background: linear-gradient(90deg, rgba(55,91,110,1) 100%, rgba(0,212,255,0.3253676470588235) 100%);    
+            border: 1px black solid;
+            border-radius: 3%;
+            hr{
+                margin: 3rem 0;
+            }
+            .contacto-info
             {
-                .form-label
-                { 
-                    margin-left: 3%;
-                    margin-top: 1%;
-                    font-weight: bolder;
-                }
-                .form-control
+                h4 
                 {
-                    width: 80%;
+                    font-size: map-get($titulo , tamaño );
+                    margin-left: map-get($titulo , margen-izq );
+                    margin-top: map-get($titulo , margen-arriba );
+                    text-decoration: map-get($titulo , decoration );
+                    font-weight: map-get($titulo , tipo-letra );
+                    text-align: center;
+                }
+                h6
+                {
+                    font-size: 25px;
                     margin-left: 3%;
-                    height: 50px;
+                    margin-top: 2%;
                     font-weight: bold;
                 }
-            } 
-            .btn
+            }
+            .contacto-form
             {
-                margin-left: 45%;
-                margin-top:30px;
-            }      
-        }           
-    }
-    
-    .cuadro
-    {
-        width: 1000px;
-        height: 500px;
-        margin: 3% 0 3% 3%; 
-        background-color: #726666;
-        border: 1px black solid;
-        border-radius: 3%;
+                
+                h4 
+                {
+                    font-size: map-get($titulo , tamaño );
+                    margin-left: map-get($titulo , margen-izq );
+                    margin-top: map-get($titulo , margen-arriba );
+                    text-decoration: map-get($titulo , decoration );
+                    font-weight: map-get($titulo , tipo-letra );
+                    text-align: center;
+                }
+                form
+                {
+                    .mb-3
+                    {
+                        .form-label
+                        { 
+                            margin-left: 7%;
+                            margin-top: 1%;
+                            font-weight: bolder;
+                            color: white;
+                        }
+                        .form-control
+                        {
+                            width: 80%;
+                            margin-left: 7%;
+                            height: 50px;
+                            font-weight: bold;
+                        }
+                    } 
+                    .btn
+                    {
+                        margin-left: 50%;
+                        margin-top:30px;
+                    }
+                }                  
+            }
+        }
     }          
 }

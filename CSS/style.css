@@ -17,7 +17,7 @@ header {
 header div div .img-uno {
   width: 200px;
   height: 100px;
-  margin-left: 20px;
+  margin-left: 8%;
 }
 header div .boton .form-control {
   max-width: 500px;
@@ -128,64 +128,102 @@ footer {
 footer .contenedor {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-footer h3 {
-  text-decoration: underline;
-  font-family: serif;
-}
-footer .cliente {
+footer .contenedor .cliente {
   color: white;
   justify-content: flex-start;
   flex-direction: column;
   margin-top: 20px;
 }
-footer .horario {
+footer .contenedor .cliente h3 {
+  text-decoration: underline;
+  font-family: serif;
+}
+footer .contenedor .horario {
   color: white;
   flex-direction: column;
   align-items: end;
   margin-top: 20px;
 }
+footer .contenedor .horario h3 {
+  text-decoration: underline;
+  font-family: serif;
+}
+footer .contenedor .redes-sociales h3 {
+  text-decoration: underline;
+  font-family: serif;
+  color: white;
+}
+footer .contenedor .redes-sociales a img {
+  margin-left: 40px;
+  margin-top: 10px;
+}
 
 /*pagina de contacto*/
-main section h4 {
+main section .info-dos {
+  width: 1500px;
+  height: 1000px;
+  margin: 3% 0 3% 8%;
+  background: rgb(55, 91, 110);
+  background: linear-gradient(90deg, rgb(55, 91, 110) 100%, rgba(0, 212, 255, 0.3253676471) 100%);
+  border: 1px black solid;
+  border-radius: 3%;
+}
+main section .info-dos hr {
+  margin: 3rem 0;
+}
+main section .info-dos .contacto-info h4 {
   font-size: 40px;
   margin-left: 3%;
   margin-top: 5%;
   text-decoration: underline;
   font-weight: bold;
+  text-align: center;
 }
-main section h6 {
+main section .info-dos .contacto-info h6 {
   font-size: 25px;
   margin-left: 3%;
   margin-top: 2%;
   font-weight: bold;
 }
-main div form .mb-3 .form-label {
+main section .info-dos .contacto-form h4 {
+  font-size: 40px;
   margin-left: 3%;
+  margin-top: 5%;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+}
+main section .info-dos .contacto-form form .mb-3 .form-label {
+  margin-left: 7%;
   margin-top: 1%;
   font-weight: bolder;
+  color: white;
 }
-main div form .mb-3 .form-control {
+main section .info-dos .contacto-form form .mb-3 .form-control {
   width: 80%;
-  margin-left: 3%;
+  margin-left: 7%;
   height: 50px;
   font-weight: bold;
 }
-main div form .btn {
-  margin-left: 45%;
+main section .info-dos .contacto-form form .btn {
+  margin-left: 50%;
   margin-top: 30px;
-}
-main .cuadro {
-  width: 1000px;
-  height: 500px;
-  margin: 3% 0 3% 3%;
-  background-color: #726666;
-  border: 1px black solid;
-  border-radius: 3%;
 }
 
 /* MODELOS ADAPTADOS VISTA MOBILE */
 @media (max-width: 576px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .producto {
+    text-align: center;
+  }
+  .tarjeta {
+    margin-bottom: 20px;
+  }
   .imagen-uno {
     display: none;
   }
@@ -207,6 +245,10 @@ main .cuadro {
     margin-left: 45px;
   }
   /* Footer */
+  footer {
+    width: 100%;
+    font-size: 14px;
+  }
   .contenedor {
     display: flex;
     flex-direction: column;
@@ -214,14 +256,15 @@ main .cuadro {
   }
   /* pagina contacto */
   .info-dos h4 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   section div h6 {
-    font-size: 15px;
+    font-size: 15px !important;
   }
-  main .cuadro {
-    height: 470px;
-    width: 520px;
+  .info-dos {
+    height: auto !important;
+    width: auto !important;
+    margin-right: 2% !important;
   }
 }
 

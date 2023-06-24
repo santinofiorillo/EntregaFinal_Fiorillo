@@ -17,18 +17,24 @@
 <body>
 <!--ENCABEZADO-->
     <header>
-        <div>
-            <div class="logotipo"> <!-- imagen del logo -->   
-                <img class="img-uno" src="/IMG/Logo -PC-tecno.png" alt="imagen del logo">
+        <div >
+            <div >
+                <div >    
+                    <div class="logotipo"> <!-- imagen del logo -->   
+                        <img class="img-uno" src="/IMG/Logo -PC-tecno.png" alt="imagen del logo">
+                    </div>
+                </div>
+                <!--Boton de busqueda-->
+                <div class=" w-100">
+                    <form class="boton d-flex justify-content-center" role="search">
+                        <input class="form-control me-2 " type="search" placeholder="Buscar producto..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-            <!--Boton de busqueda-->
-            <form class="boton d-flex justify-content-center" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar producto..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
         </div>
         <!--BARRA DE NAVEGACION-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,44 +60,39 @@
         </nav>
     </header>
 <!--SECCION DE CONTACTO-->    
-    <main >
-        <!--INFORMACION DE LA EMPRESA-->
+    <main>
+        <!-- INFORMACION DE LA EMPRESA -->
         <section>
             <div class="info-dos">
+                <div class="contacto-info">
                 <h4>Sobre Nosotros:</h4>
-            </div>
-            <div>
-                <h6>PC TECNO es una empresa dedicada a la comercialización de productos tecnológicos orientados a la informática. 
-                    Nuestra misión es acercar a todos nuestros clientes productos líderes a las tecnologías, ofreciéndoles la última generación de excelente calidad a precios acordes. 
-                    Apuntamos poder brindar a nuestros clientes la mayor satisfacción por cada uno de los productos comercializados brindándoles respaldo en el uso de las tecnologías que ofrecemos otorgando un óptimo servicio postventa.
-                </h6>
-            </div>
-            <div class="info-dos">
-                <h4 >Contactenos:</h4>
+                <h6>PC TECNO es una empresa dedicada a la comercialización de productos tecnológicos orientados a la informática. Nuestra misión es acercar a todos nuestros clientes productos líderes a las tecnologías, ofreciéndoles la última generación de excelente calidad a precios acordes. Apuntamos poder brindar a nuestros clientes la mayor satisfacción por cada uno de los productos comercializados brindándoles respaldo en el uso de las tecnologías que ofrecemos otorgando un óptimo servicio postventa.</h6>
+                </div>
+                <hr>
+                <div class="contacto-form">
+                    <h4>Contactenos:</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputNombre1" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="exampleInputNombre1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputApellido1" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="exampleInputApellido1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputAsunto1" class="form-label">Asunto:</label>
+                            <input type="text" class="form-control" id="exampleInputAsunto1">
+                        </div>
+                            <button type="submit" class="btn btn-primary d-flex">Enviar</button>
+                    </form>
+                </div> 
             </div>
         </section>
-        <!--FORMULARIO DE CONSULTA-->
-        <div class="cuadro">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputNombre1" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" >
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputApellido1" class="form-label">Apellido:</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1"> 
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputAsunto1" class="form-label">Asunto:</label>
-                    <input type="text" class="form-control"> 
-                </div>
-                <button type="submit" class="btn btn-primary d-flex ">Enviar</button>
-            </form>
-        </div>
     </main>
 <!--PIE DE PAGINA-->
     <footer>
@@ -104,6 +105,18 @@
                 <h3>Nuestros Horarios: </h3>
                 <p><strong>Lun a Vier. 9:00 AM - 18:00 PM</strong></p>
                 <p><strong>Sab 10:00 AM - 14:30 PM.</strong></p>
+            </div>
+            <div class="redes-sociales">
+                <h3>Seguinos en nuestras redes: </h3>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png" alt="facebook"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/youtube--v1.png" alt="youtube--v1"/>
+                </a>
             </div>
         </div>
     </footer>
